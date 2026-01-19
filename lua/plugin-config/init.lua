@@ -1,3 +1,7 @@
-require("plugin-config.rose-pine")
+-- require("plugin-config.rose-pine")
 require("plugin-config.katagawa")
 require("plugin-config.telescope")
+require("plugin-config.lsp")
+require("plugin-config.completion")
+require("plugin-config.treesitter")
+require("plugin-config.fugative")

@@ -1,6 +1,19 @@
 --uses system clipboard
 vim.o.clipboard = "unnamedplus"
 
+
+vim.g.clipboard = {
+  name = "osc52",
+  copy = {
+    ["+"] = require("vim.ui.clipboard.osc52").copy("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").copy("*"),
+  },
+  paste = {
+    ["+"] = require("vim.ui.clipboard.osc52").paste("+"),
+    ["*"] = require("vim.ui.clipboard.osc52").paste("*"),
+  },
+}
+
 vim.o.guicursor = ""
 
 --set tab spacing to 4 spaces
